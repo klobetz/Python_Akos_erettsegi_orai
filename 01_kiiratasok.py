@@ -12,3 +12,10 @@ print("""első sor
 valami
 valami kettő
 """)
+
+#típusok
+a = 0
+print(a)
+a = 15                  #int típus (szám)
+print(type(a))
+print(a)
