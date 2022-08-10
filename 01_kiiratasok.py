@@ -72,3 +72,24 @@ c = 8
 d = 5
 e = c+d
 print(e)
+
+#kiítarás szöveggel:
+print("Az e változóm értéke: e")
+print("Az e változóm értéke: " + str(e))
+print("Az e változóm értéke:", e)
+print(f"Az e változóm értéke: {e}")
+print(f"Az {e} ami az e változó értéke.") #f sztring változó beillesztése
+
+#típuskonverzió:
+#ezek a sorok nem egyenlőek a változók típusaival
+int(15)
+float(15)
+str(15)
+
+#műveletek:
+
+#zárójelek
+
+#szöveg összefűzés
+
+#adatok bekérése a felhasználóktól!
