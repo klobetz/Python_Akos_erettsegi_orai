@@ -1,4 +1,6 @@
 #képernyőre kiíratás
+
+
 print("Első programom!")            #futtatáshoz shift+ctrl+F10
 print('Első programom!')            #vagy így
 print('Első programom! "idézet" ')
@@ -13,9 +15,60 @@ valami
 valami kettő
 """)
 
-#típusok
+#érték típusok
+15          #int
+"szöveg"    #str (sztring)
+3.15        #float (lebegő pontos)
+
+#válltozó
 a = 0
 print(a)
 a = 15                  #int típus (szám)
 print(type(a))
 print(a)
+szoveg = ""             #üres sztring típusú változó
+
+szoveg = "Ez egy szöveg!"
+print(type(szoveg))
+print(szoveg)
+
+#változó értéknövelés
+print("-"*50)
+b = 0
+print(b)
+
+b = b+1     #sztenderd
+print(b)
+
+b += 10
+print(b)
+
+b *= 5
+print(b)
+
+#b =* 50          #ez nem jó így nem használjuk
+
+#változó típusának a megváltoztatása
+print("-"*50)
+nap = "süt a nap"
+print(type(nap))
+print(nap)
+print()
+nap = 2022
+print(type(nap))
+print(nap)
+
+#beépített függvény len() változóben tárolt elemek hosszának a kiíratása
+print("-"*50)
+nev = "Klobetz Ákos"
+hossz = len(nev)
+print(hossz)
+#egyben
+print(len(nev))
+
+#változó művelet összeadások
+print("-"*50)
+c = 8
+d = 5
+e = c+d
+print(e)
