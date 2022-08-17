@@ -86,10 +86,89 @@ int(15)
 float(15)
 str(15)
 
+
 #műveletek:
 
+#összeadás (+)
+#kivonás (-)
+#szorzás (*)
+#hatváynozás (**)
+#osztás maradéka (%)
+#osztás ( (/) vagy (//))
+print("-"*50)
+f = e/3                 #maradékos osztás
+print(f)
+
+f = e//3                #egészre kerekített
+print(f)
+
+g = e**2                #hatványozás
+print(g)
+
+h = e%d                 #osztás maradéka
+print(h)
+
+h = 13%5
+h = 15%22
+print(h)
+
 #zárójelek
+print("-"*50)
+i = 5
+i = 3*i+1
+print(i)
+#A zárójelek módosítják az eredményt
+i = 5
+i = 3*(i+1)
+print(i)
 
-#szöveg összefűzés
+#szöveg összefűzés a (+) jel segítségével
+print("-"*50)
+vnev = "Klobetz"
+knev = "Ákos"
+print(vnev + knev)            # ez így nem igazán jó
+print(vnev+" "+knev)          #még egy üres karaktert hozzáadok
+print("!"*50)
 
+nev = vnev + knev
+print(nev)
+nev = f"{vnev} {knev}"
+print(nev)
+
+print("!"*50)
+#de ez nem összefűzés (string interpoláció)
+print(f"{vnev} {knev}")
+print("!"*50)
+
+print("-"*50)
 #adatok bekérése a felhasználóktól!
+# input("Kérek egy keresztnevet: ")
+# print(input("Kérek egy keresztnevet: "))
+# valasz = input("Kérek egy nevet: ")
+# print(valasz)
+
+# valaszvnev = input("Kérek egy vezetéknevet: ")
+# valaszknev = input("Kérek egy keresztnevet: ")
+#
+# print(f"A kért adat: {valaszvnev} {valaszknev}")
+
+#kérj be két számot és írasd ki az összegüket:
+
+# valaszszam1 = int(input("kérek egy számot: "))
+# valaszszam2 = int(input("kérek egy másik számot: "))
+# print(f"A két szám összege: {valaszszam1 + valaszszam2}")
+
+#lista létrehozása
+lista = []        #üres lista
+print(type(lista))
+print(lista)
+
+lista = [3, 5, 7, 4, 12, 54, 65]          # int lista
+print(lista)
+print(type(lista))
+
+#lista adott elemének az elérése
+lista = ["alma", "körte", "banán", "narancs"]   #sztring lista
+
+print(lista[0])         #az első elem kiíratása
+print(lista[-1])        #utolsó elem kiíratása
