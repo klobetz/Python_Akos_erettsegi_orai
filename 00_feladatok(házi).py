@@ -27,10 +27,39 @@ import math
 # print(f"legkisebb: {min(valasz,valasz2,valasz3)}")
 # print(f"legkisebb: {max(valasz,valasz2,valasz3)}")
 #
-szam = math.pi
-szam3 = 3.68
-print(f"{round(szam,2)}")
-print(f"{szam3:.3f}")
-print(f"{szam3:.2f}")
-print(f"{math.ceil(szam3)}")
-print(f"{math.floor(szam3)}")
+# szam = math.pi
+# szam3 = 3.68
+# print(f"{round(szam,2)}")
+# print(f"{szam3:.3f}")
+# print(f"{szam3:.2f}")
+# print(f"{math.ceil(szam3)}")
+# print(f"{math.floor(szam3)}")
+
+##példa részek a feladat megoldáshoz
+# szoveg = "gyümölcs"
+# db = 0
+# valasz = input("kérek egy karaktert: ")
+#
+# for elem in szoveg:
+#     print(elem)
+#     db +=1
+#     # if valasz == elem:
+#     #     print("van találat!")
+# print(db)
+#
+# lista = ["gyümölcs", "ü"]
+# print(lista)
+# for i in lista:
+#     if valasz == i:
+#         print("van találat!")
+#
+# if valasz in szoveg:
+#     pass
+# else:
+#     pass
+
+# lista = [0,1]
+# print(lista)
+# lista.append(5)
+# print(lista)
+
