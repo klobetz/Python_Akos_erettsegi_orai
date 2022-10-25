@@ -64,3 +64,36 @@ for index, elem in enumerate(szamoklista):
     print(f"{index} => {elem*2}")
 
 #listametodusok
+#hozzáad (a lista végére)
+szamoklista.append(5874)
+print(szamoklista)
+#az adott helyre beszúrás
+szamoklista.insert(4,111111)
+print(szamoklista)
+
+print(szamoklista.count(5))         #megszámolja hány db van a listában
+print(szamoklista.index(68))        #az adottt szám melyik indexe helyezkedik el
+
+print(szamoklista)
+szamoklista.remove(73)              #az adott érték kivétele a listából
+print(szamoklista)
+
+szamoklista.reverse()               #lista elemeinek a mefordítása
+print(szamoklista)
+
+
+print("*"*50)
+#szamoklista.sort()                 #ez módosítja az eredeti litát és nincs visszaút
+print(szamoklista)
+
+print(sorted(szamoklista))          #ez viszont csa az adott esetben végez módosítást
+print(szamoklista)
+print(sorted(szamoklista, reverse=True))    #fordított sorrend
+
+print(max(szamoklista))     #legnagyobb
+print(min(szamoklista))     #legkisebb
+print(sum(szamoklista))     #összead
+
+
+
+
