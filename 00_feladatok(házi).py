@@ -63,3 +63,18 @@ import math
 # lista.append(5)
 # print(lista)
 
+import random, math
+
+random
+r = [random.randrange(1,101,1) for elem in range(100)]
+print(r)
+
+szamok = []
+for elem in range(10):
+    elem = random.randrange(1,101,1)
+    szamok.append(elem)
+print(len(szamok))
+print(len(r))
+print(szamok)
+pi = math.pi
+print(f"{pi:.2f}")
