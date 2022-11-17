@@ -40,3 +40,19 @@ print(neveklista)
 for vezeteknev in neveklista:
     print(vezeteknev[0])
 print(len(neveklista))
+
+#kicsit egyszerűbben:
+print("!"*50)
+neveklista2=[]
+with open("txt_allomanyok/nevek_sima.txt", encoding="utf8") as f:
+    elsosor = f.readline()
+    for adat in f:
+        sor = adat.strip().split(" ")
+        vnev = sor[0]
+        knev = sor[1]
+        neveklista2.append([vnev,knev])
+
+for vnev,knev in neveklista2:
+    print(vnev)
+
+
