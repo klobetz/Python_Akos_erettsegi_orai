@@ -36,3 +36,14 @@ print(f"2. feladat\n{adottnap}. nap rendszám: {autorendszam}")
 
 #hány sort tartalmaz a fájl?
 print(f"A fájl {len(autoklista)} sort tartalmaz")
+
+print("3.feladat")
+#valasz = input("Nap: ")
+valasz = 4
+print(f"Forgalom a(z) {valasz}. napon: ")
+for nap,ido,rendszam,azonosito,km,kibehjtas in autoklista:
+    if nap == valasz:
+        if kibehjtas == 0:
+            print(f"{ido} {rendszam} {azonosito} ki")
+        else:
+            print(f"{ido} {rendszam} {azonosito} be")
