@@ -57,3 +57,24 @@ for nap,ido,rendszam,azonosito,km,kibehjtas in autoklista:
     else:
         dbbe += 1
 print(f"4. feladat\nA hónap végén {dbki-dbbe} autót nem hoztak vissza. ")
+
+#5.feladat:
+rendszamoklista = []
+for nap,ido,rendszam,azonosito,km,kibehjtas in autoklista:
+    if rendszam not in rendszamoklista:
+        rendszamoklista.append(rendszam)
+rendszamoklista.sort()              #ebben az esetben az eredeti lista is megváltozik!!!!
+#print(sorted(rendszamoklista))     #ebben az esetben csak a kiíratás idejéig lesz rendezve a listám!!!!!!
+#print(rendszamoklista)             #visszanyúlhatok az eredeti listára ami nincs sorba rendezve!!!
+
+for elem in rendszamoklista:
+    megtettkm = []
+    for nap, ido, rendszam, azonosito, km, kibehjtas in autoklista:
+        if elem == rendszam:
+            megtettkm.append(km)
+        #print(f"{rendszam} {megtettkm}")
+    kezdokm = megtettkm[0]
+    utolsokm = megtettkm[-1]
+    megtettkm = utolsokm-kezdokm
+    print(f"{elem} {megtettkm} km")
+
