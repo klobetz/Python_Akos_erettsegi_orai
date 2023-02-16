@@ -47,3 +47,13 @@ for nap,ido,rendszam,azonosito,km,kibehjtas in autoklista:
             print(f"{ido} {rendszam} {azonosito} ki")
         else:
             print(f"{ido} {rendszam} {azonosito} be")
+
+#4.feladat:
+dbki = 0
+dbbe = 0
+for nap,ido,rendszam,azonosito,km,kibehjtas in autoklista:
+    if kibehjtas == 0:
+        dbki += 1
+    else:
+        dbbe += 1
+print(f"4. feladat\nA hónap végén {dbki-dbbe} autót nem hoztak vissza. ")
