@@ -94,3 +94,13 @@ for elem in rendszamoklista:
 print(f"Leghosszabb út: {leghosszabbut} km, személy: {dolgoadat} ")
 
 #7.feladat:
+#valasz = input("Rendszám: ")
+valasz = "CEG304"
+with open(f"kiiratas/{valasz}_menetlevel.txt", "w", encoding="utf8") as f:
+    for nap, ido, rendszam, azonosito, km, kibehjtas in autoklista:
+        if rendszam == valasz:
+            if kibehjtas == 0:
+                f.writelines(f"{azonosito}\t {nap}. {ido}\t {km}km\t")
+            else:
+                f.writelines(f"{nap}. {ido}\t {km}km\n")
+print(f"7. feladat:\nRendszám: {valasz}\nA menetlevél kész.")
