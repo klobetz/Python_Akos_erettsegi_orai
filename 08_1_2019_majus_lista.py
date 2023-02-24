@@ -78,3 +78,19 @@ for elem in rendszamoklista:
     megtettkm = utolsokm-kezdokm
     print(f"{elem} {megtettkm} km")
 
+#6.feladat:
+leghosszabbut = 0
+for elem in rendszamoklista:
+    for nap, ido, rendszam, azonosito, km, kibehjtas in autoklista:
+        if elem == rendszam:
+            if kibehjtas == 0:
+                kezdokm = km
+            else:
+                uthossza = km-kezdokm
+                #print(rendszam,uthossza)
+                if leghosszabbut<uthossza:
+                    leghosszabbut = uthossza
+                    dolgoadat = azonosito
+print(f"Leghosszabb út: {leghosszabbut} km, személy: {dolgoadat} ")
+
+#7.feladat:
